@@ -1,0 +1,49 @@
+{
+  "name": "district50/whatsapp-stream-crypto",
+  "description": "WhatsApp stream encryption/decryption for PSR-7 streams",
+  "type": "library",
+  "keywords": ["whatsapp", "encryption", "psr7", "stream", "crypto"],
+  "homepage": "https://github.com/district50/whatsapp-stream-crypto",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sergey Bodin",
+      "email": "sergey@bodin.ru",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.4|^8.0|^8.1|^8.2",
+    "psr/http-message": "^1.0|^2.0",
+    "guzzlehttp/psr7": "^2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "phpstan/phpstan": "^1.0",
+    "phpstan/phpstan-phpunit": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "District50\\WhatsAppStreamCrypto\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "District50\\WhatsAppStreamCrypto\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit",
+    "phpstan": "phpstan analyse src/ --level=8",
+    "check": [
+      "@test",
+      "@phpstan"
+    ]
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
