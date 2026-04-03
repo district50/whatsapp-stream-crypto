@@ -51,7 +51,7 @@
 			$wrongKey = str_repeat( 'w', 32 );
 			$encryptedStreamForDecrypt = Utils::streamFor( $encryptedData );
 			
-			$this->expectException( \YourVendor\WhatsAppStreamCrypto\Exception\IntegrityException::class );
+			$this->expectException( \District50\WhatsAppStreamCrypto\Exception\IntegrityException::class );
 			
 			$decryptStream = new DecryptStream( $encryptedStreamForDecrypt, $wrongKey, MediaType::IMAGE );
 			$decryptStream->getContents();
