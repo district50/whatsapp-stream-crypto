@@ -2,6 +2,7 @@
   "name": "district50/whatsapp-stream-crypto",
   "description": "WhatsApp stream encryption/decryption for PSR-7 streams",
   "type": "library",
+  "version": "1.0.0",
   "keywords": ["whatsapp", "encryption", "psr7", "stream", "crypto"],
   "homepage": "https://github.com/district50/whatsapp-stream-crypto",
   "license": "MIT",
