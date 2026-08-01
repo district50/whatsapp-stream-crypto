@@ -16,6 +16,7 @@
 		
 		public function testGenerateSidecar(): void {
 			$testData = str_repeat( 'A', 200 * 1024 ); // 200KB данных
+			
 			$originalStream = Utils::streamFor( $testData );
 			
 			$sidecar = SidecarGenerator::generate( $originalStream, $this->mediaKey, MediaType::VIDEO );
