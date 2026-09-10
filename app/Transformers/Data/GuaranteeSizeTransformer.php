@@ -17,13 +17,13 @@ class GuaranteeSizeTransformer extends TransformerAbstract {
     public function transform(GuaranteeSize $model): array {
         return [
             'id' => $model->id,
-            'product_type'  => $model->product_type,
-            'brand' => $model->brand,
-            'fabric_name' => $model->fabric_name,
-            'width_min' => $model->width_min,
-            'width_max' => $model->width_max,
-            'height_min' => $model->height_min,
-            'height_max' => $model->height_max,
+            'pt' => $model->product_type,
+            'br' => $model->brand,
+            'fn' => $model->fabric_name,
+            'wn' => $model->width_min,
+            'wx' => $model->width_max,
+            'hn' => $model->height_min,
+            'hx' => $model->height_max,
         ];
     }
 

@@ -17,11 +17,11 @@ class PriceMatrixTransformer extends TransformerAbstract {
     public function transform(PriceMatrix $model): array {
         return [
             'id' => $model->id,
-            'product_type'  => $model->product_type,
-            'calculate_type' => $model->calculate_type,
-            'width_value' => $model->width_value,
-            'height_value' => $model->height_value,
-            'price' => $model->price,
+            'pt' => $model->product_type,
+            'ct' => $model->calculate_type,
+            'wv' => $model->width_value,
+            'hv' => $model->height_value,
+            'pr' => $model->price,
         ];
     }
 
