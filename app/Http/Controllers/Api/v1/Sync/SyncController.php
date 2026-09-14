@@ -3,10 +3,6 @@
     namespace App\Http\Controllers\Api\v1\Sync;
 
     use App\Http\Controllers\Controller;
-    use App\Models\GuaranteeSize;
-    use App\Models\PriceMatrix;
-    use App\Transformers\Data\GuaranteeSizeTransformer;
-    use App\Transformers\Data\PriceMatrixTransformer;
     use Illuminate\Http\JsonResponse;
     use Illuminate\Http\Request;
     use Illuminate\Support\Facades\Storage;
