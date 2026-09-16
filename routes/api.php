@@ -14,6 +14,6 @@
         } );
         // синхронизация информации
         Route::prefix( 'sync' )->name( 'sync.' )->group( function() {
-            Route::put( '/all', [ SyncController::class, 'all' ] )->name( 'all' );
+            Route::post( '/measurements', [ SyncController::class, 'measurements' ] )->name( 'measurements' );
         } );
     } );

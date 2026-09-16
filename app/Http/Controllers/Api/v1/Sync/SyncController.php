@@ -11,7 +11,7 @@
 
         public function __construct() { }
 
-        public function all( Request $request ): ?JsonResponse {
+        public function measurements( Request $request ): ?JsonResponse {
             Storage::disk( 'local' )->put( 'sync/log.json', json_encode( $request->all() ) );
             return response()->json( $request->all() );
             //return ($model = GuaranteeSize::all()) ? fractal($model, new GuaranteeSizeTransformer())->respond() : null;
