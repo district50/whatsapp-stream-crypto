@@ -15,6 +15,5 @@
             'last_error',
         ];
 
-        protected $casts = [
-        ];
+        protected $casts = [];
     }

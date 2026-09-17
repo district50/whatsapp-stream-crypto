@@ -4,11 +4,8 @@
 
     use App\Http\Controllers\Controller;
     use App\Models\PendingSync;
-    use App\Models\Processes\Task;
-    use Composer\Package\Package;
     use Illuminate\Http\JsonResponse;
     use Illuminate\Http\Request;
-    use Illuminate\Support\Facades\Storage;
 
     class SyncController extends Controller {
 

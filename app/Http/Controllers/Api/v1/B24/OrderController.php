@@ -10,7 +10,6 @@
     class OrderController extends Controller {
 
         public function __construct() { }
-
         public function create( Request $request ): ?JsonResponse {
             Storage::disk( 'local' )->put( 'sync/order.json', json_encode( $request->all() ) );
             return new JsonResponse([
